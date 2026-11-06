@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Details | Campus Swap</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+    <header>
+        <div class="logo">
+            <h1>Campus<span>Swap</span></h1>
+        </div>
+
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="index.html#categories">Categories</a>
+            <a href="sell-item.html">Sell an Item</a>
+            <a href="dashboard.html">Dashboard</a>
+        </nav>
+
+        <div class="auth-buttons" id="auth-buttons">
+            <a href="login.html" class="login-btn" id="header-login">
+                Login
+            </a>
+
+            <a href="register.html" class="register-btn" id="header-register">
+                Register
+            </a>
+
+            <a href="dashboard.html" class="login-btn" id="header-dashboard" style="display: none;">
+                Dashboard
+            </a>
+
+            <button type="button" class="logout-btn" id="header-logout" style="display: none;">
+                Logout
+            </button>
+        </div>
+    </header>
+
+    <main class="product-details-page">
+        <section class="product-details-card">
+
+            <div class="product-details-image">
+                <img id="detail-image" src="images/books.jpg" alt="Product image">
+            </div>
+
+            <div class="product-details-info">
+                <p class="details-label">CAMPUS MARKETPLACE</p>
+
+                <h2 id="detail-name">Engineering Books</h2>
+
+                <p class="price" id="detail-price">₹150</p>
+
+                <p id="detail-condition">Condition: Good</p>
+
+                <hr>
+
+                <h3>Description</h3>
+                <p id="detail-description">
+                    Engineering textbooks for college students.
+                </p>
+
+                <h3>Seller Information</h3>
+                <p id="detail-seller">Seller: Campus Swap Student</p>
+
+                <a href="login.html" class="view-btn" id="contact-seller-btn">
+                    Login to Contact Seller
+                </a>
+
+                <br><br>
+
+                <a href="index.html" class="back-link">
+                    ← Back to Products
+                </a>
+            </div>
+
+        </section>
+    </main>
+
+    <footer>
+        <h2>CampusSwap</h2>
+        <p>A smarter way for students to buy, sell and exchange.</p>
+
+        <div class="footer-links">
+            <a href="index.html">Home</a>
+            <a href="register.html">Join Us</a>
+            <a href="sell-item.html">Sell an Item</a>
+        </div>
+
+        <p class="copyright">
+            &copy; 2026 Campus Swap. All rights reserved.
+        </p>
+    </footer>
+
+    <script src="js/app.js"></script>
+    <script src="js/products.js"></script>
+    <script src="js/product-details.js"></script>
+    <script src="js/header.js"></script>
+    
+
+</body>
+
+</html>

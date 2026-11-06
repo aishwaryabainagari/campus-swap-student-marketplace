@@ -1,0 +1,157 @@
+\<!DOCTYPE html>
+
+\<html lang="en">
+\<head>
+&#x20;   \<meta charset="UTF-8">
+&#x20;   \<meta name="viewport" content="width=device-width, initial-scale=1.0">
+&#x20;   \<title>Student Dashboard | Campus Swap\</title>
+&#x20;   \<link rel="stylesheet" href="css/style.css">
+\</head>
+\<body>
+
+```
+<header>
+    <div class="logo">
+        <h1>Campus<span>Swap</span></h1>
+    </div>
+
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="index.html#categories">Categories</a>
+        <a href="sell-item.html">Sell an Item</a>
+        <a href="dashboard.html">Dashboard</a>
+    </nav>
+
+    <div class="auth-buttons" id="auth-buttons">
+        <a href="login.html" class="login-btn" id="header-login">
+            Login
+        </a>
+
+        <a href="register.html" class="register-btn" id="header-register">
+            Register
+        </a>
+
+        <a href="dashboard.html" class="login-btn"
+           id="header-dashboard" style="display: none;">
+            Dashboard
+        </a>
+
+        <button type="button" class="logout-btn"
+                id="header-logout" style="display: none;">
+            Logout
+        </button>
+    </div>
+</header>
+
+<main class="dashboard-page">
+
+    <section class="dashboard-heading">
+        <h2>Student Dashboard</h2>
+        <p>Welcome to your Campus Swap dashboard!</p>
+    </section>
+
+    <section class="dashboard-profile">
+        <div class="profile-icon" aria-hidden="true">👤</div>
+
+        <div class="profile-info">
+            <h3 id="dashboard-name">Campus Swap Student</h3>
+
+            <p id="dashboard-email">
+                Login to view your account details.
+            </p>
+
+            <p class="student-status">Campus Swap Member</p>
+        </div>
+
+        <a href="login.html" class="view-btn" id="dashboard-login">
+            Login
+        </a>
+    </section>
+
+    <section class="dashboard-stats">
+
+        <article class="stat-card">
+            <h3 id="total-listings">0</h3>
+            <p>My Listings</p>
+        </article>
+
+        <article class="stat-card">
+            <h3>0</h3>
+            <p>Items Sold</p>
+        </article>
+
+        <article class="stat-card">
+            <h3>0</h3>
+            <p>Saved Items</p>
+        </article>
+
+    </section>
+
+    <section class="dashboard-actions">
+        <h2>Quick Actions</h2>
+
+        <div class="action-container">
+
+            <article class="action-card">
+                <h3>🛍️ Browse Products</h3>
+                <p>Explore books, calculators, notes, and more.</p>
+                <a href="index.html#products" class="view-btn">
+                    Browse Now
+                </a>
+            </article>
+
+            <article class="action-card">
+                <h3>➕ Sell an Item</h3>
+                <p>List your unused college items for other students.</p>
+                <a href="sell-item.html" class="view-btn">
+                    List an Item
+                </a>
+            </article>
+
+            <article class="action-card">
+                <h3>📚 My Listings</h3>
+                <p>View the items you have listed for sale.</p>
+                <a href="#my-listings" class="view-btn">
+                    View Listings
+                </a>
+            </article>
+
+        </div>
+    </section>
+
+    <section class="my-listings" id="my-listings">
+        <h2>My Listings</h2>
+
+        <div id="my-listings-container">
+            <p id="empty-listings">
+                You have not listed any items yet.
+            </p>
+        </div>
+    </section>
+
+</main>
+
+<footer>
+    <h2>CampusSwap</h2>
+    <p>A smarter way for students to buy, sell and exchange.</p>
+
+    <div class="footer-links">
+        <a href="index.html">Home</a>
+        <a href="register.html">Join Us</a>
+        <a href="sell-item.html">Sell an Item</a>
+    </div>
+
+    <p class="copyright">
+        &copy; 2026 Campus Swap. All rights reserved.
+    </p>
+</footer>
+
+<script src="js/app.js"></script>
+<script src="js/dashboard.js"></script>
+<script src="js/header.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+<script src="js/supabase-config.js"></script>
+```
+
+\</body>
+\</html>

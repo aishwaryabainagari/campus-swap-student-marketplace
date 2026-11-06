@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Campus Swap | Student Marketplace</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+    <!-- Header -->
+    <header>
+        <div class="logo">
+            <h1>Campus<span>Swap</span></h1>
+        </div>
+
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="#categories">Categories</a>
+            <a href="sell-item.html">Sell an Item</a>
+            <a href="dashboard.html">Dashboard</a>
+        </nav>
+
+        <!-- Dynamic Authentication Buttons -->
+        <div class="auth-buttons" id="auth-buttons">
+            <a href="login.html" class="login-btn" id="header-login">
+                Login
+            </a>
+
+            <a href="register.html" class="register-btn" id="header-register">
+                Register
+            </a>
+
+            <a href="dashboard.html" class="login-btn" id="header-dashboard" style="display: none;">
+                Dashboard
+            </a>
+
+            <button type="button" class="logout-btn" id="header-logout" style="display: none;">
+                Logout
+            </button>
+        </div>
+    </header>
+
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-content">
+            <h2>Buy, Sell & Swap Within Your Campus!</h2>
+
+            <p>
+                Give your unused items a new home.
+                Discover affordable deals from fellow students.
+            </p>
+
+            <a href="#products" class="shop-btn">Explore Products</a>
+            <a href="sell-item.html" class="sell-btn">Start Selling</a>
+        </div>
+    </section>
+
+
+
+
+
+    <!-- Categories Section -->
+    <section class="categories" id="categories">
+        <h2>Shop by Category</h2>
+
+        <div class="category-container">
+
+            <a href="#products" class="category-card">
+                <img src="images/books.jpg" alt="Books">
+                <h3>Books</h3>
+            </a>
+
+            <a href="#products" class="category-card">
+                <img src="images/calculator.jpg" alt="Scientific calculator">
+                <h3>Calculators</h3>
+            </a>
+
+            <a href="#products" class="category-card">
+                <img src="images/classnotes.jpg" alt="Class notes">
+                <h3>Class Notes</h3>
+            </a>
+
+            <a href="#products" class="category-card">
+                <img src="images/pyq.jpg" alt="Previous Year Question Papers">
+                <h3>Previous Year Question Papers</h3>
+            </a>
+
+        </div>
+    </section>
+
+    <!-- Search Section -->
+    <section class="search-section">
+        <h2>Find What You Need</h2>
+
+        <form id="search-form">
+            <input type="search" id="search-input"
+                placeholder="Search books, electronics, class notes, question papers..." aria-label="Search products">
+
+            <button type="submit">Search</button>
+        </form>
+    </section>
+    <!-- Products Section -->
+    <section class="products" id="products">
+        <h2>Featured Products</h2>
+
+        <div class="product-container" id="product-container">
+
+            <article class="product-card">
+                <img src="images/books.jpg" alt="Engineering textbook">
+
+                <div class="product-info">
+                    <h3>Books</h3>
+                    <p class="price">₹150</p>
+                    <p class="condition">Condition: Good</p>
+
+                    <a href="product-details.html" class="view-btn">
+                        View Details
+                    </a>
+                </div>
+            </article>
+
+            <article class="product-card">
+                <img src="images/calculator.jpg" alt="Scientific calculator">
+
+                <div class="product-info">
+                    <h3>Calculator</h3>
+                    <p class="price">₹300</p>
+                    <p class="condition">Condition: Like New</p>
+
+                    <a href="product-details.html" class="view-btn">
+                        View Details
+                    </a>
+                </div>
+            </article>
+
+            <article class="product-card">
+                <img src="images/classnotes.jpg" alt="Class notes">
+
+                <div class="product-info">
+                    <h3>Class Notes</h3>
+                    <p class="price">₹80</p>
+                    <p class="condition">Condition: Good</p>
+
+                    <a href="product-details.html" class="view-btn">
+                        View Details
+                    </a>
+                </div>
+            </article>
+
+            <article class="product-card">
+                <img src="images/pyq.jpg" alt="Previous Year Question Papers">
+
+                <div class="product-info">
+                    <h3>Previous Year Question Papers</h3>
+                    <p class="price">₹250</p>
+                    <p class="condition">Condition: Good</p>
+
+                    <a href="product-details.html" class="view-btn">
+                        View Details
+                    </a>
+                </div>
+            </article>
+
+        </div>
+
+        <p id="no-results" hidden>No matching products found.</p>
+    </section>
+
+
+    <!-- Call to Action -->
+    <section class="sell-section">
+        <h2>Have Something You Don't Need?</h2>
+
+        <p>
+            Help another student while earning money from your unused items.
+        </p>
+
+        <a href="sell-item.html" class="sell-btn">Sell Your Item</a>
+    </section>
+
+
+    <!-- Footer -->
+    <footer>
+        <h2>CampusSwap</h2>
+
+        <p>A smarter way for students to buy, sell and exchange.</p>
+
+        <div class="footer-links">
+            <a href="index.html">Home</a>
+            <a href="register.html">Join Us</a>
+            <a href="sell-item.html">Sell an Item</a>
+        </div>
+
+        <p class="copyright">
+            &copy; 2026 Campus Swap. All rights reserved.
+        </p>
+    </footer>
+
+
+    <!-- JavaScript -->
+    <script src="js/app.js"></script>
+    <script src="js/products.js"></script>
+    <script src="js/product-details.js"></script>
+
+    <script src="js/header.js"></script>
+    <script src="js/header.js"></script>
+</body>
+
+</html>
